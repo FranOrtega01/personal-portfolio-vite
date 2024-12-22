@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Sublima;
+    src: url('./assets/Sublima-Light.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sublima, sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+// Color Palette
+$base-orange: #bd814b;
+$base-white: #d6d6d6;
+$sec-white: #A0A0B1;
+
+
+//
+body {
+    color: $base-white;
+    min-height: 200vh;
+    background: rgb(35, 33, 45);    
+    &::-webkit-scrollbar{
+        width: 8px;
+        background: rgb(35, 33, 45);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: rgb(48, 48, 66);
+        border-radius: 30px;
+    } 
+}
+
+.section {
+    min-height: 100vh;
+    // margin-bottom: 50px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.glass{
+    background-color: rgba(48, 48, 66, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.active{
+    color: $base-orange;
+}

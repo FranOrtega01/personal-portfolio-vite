@@ -1,0 +1,53 @@
+@import '../../App.scss';
+
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    span{
+        color: $base-orange;
+    }
+}
+
+
+.photo {
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin-right: 10px;
+
+    border-radius: 50%;
+    animation: photoBorders 10s infinite ease-in-out;
+    overflow: hidden;
+    img{
+        height: 100%;
+        filter: grayscale(1);
+        
+    }
+}
+
+@keyframes photoBorders {
+    0% {
+        border-radius: 42% 45% 53% 48% / 50% 50% 50% 50%;
+    }
+
+    20% {
+        border-radius: 65% 53% 58% 52% / 50% 50% 50% 50%;
+    }
+
+    40% {
+        border-radius: 40% 62% 43% 60% / 50% 50% 50% 50%;
+    }
+    60% {
+        border-radius: 64% 46% 64% 58% / 50% 50% 50% 50%;
+
+    }
+    80% {
+        border-radius: 54% 52% 53% 42% / 50% 50% 50% 50%;
+    }
+    100% {
+        border-radius: 42% 45% 53% 48% / 50% 50% 50% 50%;
+    }
+}
